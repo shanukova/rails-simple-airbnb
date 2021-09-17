@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 nav {
   padding: 0 1rem;
   background-color: #f8f9fa;
@@ -18,16 +19,6 @@ nav {
 nav h1 {
   font-size: 1.3rem;
   font-weight: lighter;
-}
-
-header {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-main {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .search-add-flat-section {
@@ -71,7 +62,52 @@ input:focus-visible {
   cursor: pointer;
 }
 
-main {
-  margin: 50px auto;
-  display: flex;
+header {
+  width: 1200px;
+  margin: 0 auto;
 }
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header h2 {
+  margin-top: .3rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+main {
+  width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flat-card {
+  background-color: #f8f9fa;
+  text-align: center;
+  border: .05rem solid gray;
+  box-shadow: .05rem .05rem .05rem gray;
+}
+
+.flat-card h3 {
+  font-size: 1.3rem;
+}
+
+.links {
+  background-color: white;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0 .5rem;
+}
+
+.blue-color { color: blue; }
+.orange-color { color: organe; }
+.red-color { color: red; }

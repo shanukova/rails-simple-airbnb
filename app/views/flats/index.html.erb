@@ -1,16 +1,21 @@
 <header>
   <h1>All flats</h1>
-  <p>There are 3 flats</p>
+  <h2>There are 3 flats</h2>
 </header>
 <main class="d-flex">
   <% @flats.each do |flat| %>
-    <div>
-      <%= image_tag('flat1.jpg', size: '350x200') %>
-      <h2><%= flat.name %></h2>
-      <h3><%= flat.address %></h3>
+    <div class="flat-card">
+      <%= image_tag('flat2.jpg', size: '350x200') %>
+      <h3><%= flat.name %></h3>
+      <h4><%= flat.address %></h4>
       <div>
-        <i class="fad fa-user-friends"><%= flat.number_of_guests %></i>
-        <i class="far fa-euro-sign"><%= flat.price_per_night %></i>
+        <p>Number of people: <%= flat.number_of_guests %></p>
+        <p>Price per night: <%= flat.price_per_night %>€</p>
+      </div>
+      <div class="links">
+        <%= link_to 'More info', flat_path(flat), class: 'blue-color' %>
+        <%= link_to 'Edit',  edit_flat_path(flat), class: 'orange-color' %>
+        <%= link_to 'Remove', flat_path(flat), method: :delete, data: { confirm: 'Are you sure?'}, class: 'red-color' %>
       </div>
     </div>
   <% end %>
