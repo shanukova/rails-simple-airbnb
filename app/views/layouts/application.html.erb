@@ -8,8 +8,17 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <nav>
+      <h1>Simple Airbnb</h1>
+      <div class="search-add-flat-section">
+        <form>
+          <input type="search" placeholder="Search">
+          <button class="btn-search">Search</button>
+        </form>
+        <button class="btn-add-flat">Add Flat</button>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

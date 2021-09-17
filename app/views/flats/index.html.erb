@@ -1,0 +1,17 @@
+<header>
+  <h1>All flats</h1>
+  <p>There are 3 flats</p>
+</header>
+<main class="d-flex">
+  <% @flats.each do |flat| %>
+    <div>
+      <%= image_tag('flat1.jpg', size: '350x200') %>
+      <h2><%= flat.name %></h2>
+      <h3><%= flat.address %></h3>
+      <div>
+        <i class="fad fa-user-friends"><%= flat.number_of_guests %></i>
+        <i class="far fa-euro-sign"><%= flat.price_per_night %></i>
+      </div>
+    </div>
+  <% end %>
+</main>
