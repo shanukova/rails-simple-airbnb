@@ -1,6 +1,6 @@
 <header>
   <h1>All flats</h1>
-  <h2>There are 3 flats</h2>
+  <h2>We have <%= pluralize(@flats.size, 'flat') %></h2>
 </header>
 <main class="d-flex">
   <% @flats.each do |flat| %>
@@ -8,9 +8,9 @@
       <%= image_tag("flat#{flat.id}.jpg", size: '350x200') %>
       <h3><%= flat.name %></h3>
       <h4><%= flat.address %></h4>
-      <div>
-        <p>Number of people: <%= flat.number_of_guests %></p>
-        <p>Price per night: <%= flat.price_per_night %>€</p>
+      <div class="flat-card-info">
+        <p>Number of people: <span><%= flat.number_of_guests %></span></p>
+        <p>Price per night: <span><%= flat.price_per_night %></span>€</p>
       </div>
       <div class="links">
         <%= link_to 'More info', flat_path(flat), class: 'blue-color' %>
