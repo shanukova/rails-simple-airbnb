@@ -2,7 +2,7 @@
   <h1>All flats</h1>
   <h2>We have <%= pluralize(@flats.size, 'flat') %></h2>
 </header>
-<main class="d-flex">
+<main class='flats-cards'>
   <% @flats.each do |flat| %>
     <div class="flat-card">
       <%= image_tag("flat#{flat.id}.jpg", size: '350x200') %>

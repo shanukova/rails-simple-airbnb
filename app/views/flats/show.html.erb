@@ -1,0 +1,53 @@
+<div class="flat-card-show-img">
+  <%= image_tag("flat#{@flat.id}.jpg") %>
+</div>
+
+<div class="flat-card-show">
+
+  <div class="flat-card-show_info">
+    <div class="flat-card-show_info_title flat-card-show_general">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+    </div>
+
+    <div class="flat-card-show_info_description flat-card-show_general">
+      <h2>A bit more about this flat..</h2>
+      <p><%= @flat.description %></p>
+    </div>
+   </div>
+
+  <div class="flat-card-show_booking">
+    <div class="flat-card-show_booking_dates flat-card-show_general">
+      <h2>Book this place!</h2>
+      <form>
+        <div>
+          <button>From:</button>
+          <input type="search" placeholder="18/09/2021">
+        </div>
+        <div>
+          <button>To:</button>
+          <input type="search" placeholder="25/09/2021">
+        </div>
+      </form>
+      <button>Book</button>
+    </div>
+
+    <div class="flat-card-show_booking_price flat-card-show_general">
+      <h2>Details</h2>
+      <p>Number of people: <span><%= @flat.number_of_guests %></span></p>
+      <p>Price per night: <span><%= @flat.price_per_night %></span>€</p>
+    </div>
+
+    <%# <ul class="flat-card-show_bookingmedia flat-card-show_general">
+      <p>Share</p>
+      <li><i class="fab fa-facebook-square"></i></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul> %>
+  </div>
+
+</div>
+
+
+</div>
