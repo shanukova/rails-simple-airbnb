@@ -62,7 +62,7 @@ nav h1 {
   cursor: pointer;
 }
 
-// Index flat styles
+// Flat index styles
 header {
   width: 1200px;
   margin: 0 auto;
@@ -92,9 +92,9 @@ header h2 {
   box-shadow: .05rem .05rem .05rem gray;
 }
 
-.flat-card h3 {
-  font-size: 1.3rem;
-}
+.flat-card h3 { font-size: 1.3rem; }
+.flat-card > p { font-size: 1.1rem; }
+
 
 .flat-card-info span {
   font-weight: bold;
@@ -117,7 +117,7 @@ header h2 {
 .orange-color { color: organe; }
 .red-color { color: red; }
 
-// Show flat styles
+// Flat show styles
 .flat-card-show-img {
   margin: 0 auto;
 }
