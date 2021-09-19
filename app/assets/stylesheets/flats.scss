@@ -9,7 +9,7 @@ body {
 
 // Navbar styles
 nav {
-  padding: 0 1rem;
+  padding: .7rem 1rem;
   background-color: #f8f9fa;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ nav h1 {
   margin-left: 1rem;
   background-color: green;
   color: white;
-  padding: .3rem;
+  padding: .1rem;
   border-radius: .5rem;
   border: .5rem solid green;
   font-size: 1rem;
@@ -52,7 +52,7 @@ nav h1 {
   margin-left: 1rem;
   background-color: blue;
   color: white;
-  padding: .3rem;
+  padding: .1rem;
   border-radius: .5rem;
   border: .5rem solid blue;
   font-size: 1rem;
@@ -158,22 +158,22 @@ header h2 {
 }
 
 .flat-card-show_info_title {
-  height: 35%;
+  // height: 35%;
 }
 
 .flat-card-show_info_description {
-  height: 55%;
+  // height: 55%;
 }
 
 .flat-card-show_booking_dates {
-  height: 50%;
+  // height: 50%;
 }
 
 .flat-card-show_booking_dates h2 {
   margin-bottom: .5rem;
 }
 .flat-card-show_booking_price {
-  height: 45%;
+  // height: 45%;
 }
 
 .flat-card-show_booking_dates form {
@@ -183,4 +183,8 @@ header h2 {
 
 .flat-card-show_booking_dates input {
   height: 2rem;
+}
+
+.btn btn-primary {
+  width: 80%;
 }
